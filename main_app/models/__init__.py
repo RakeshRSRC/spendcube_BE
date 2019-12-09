@@ -1,4 +1,3 @@
-# from flask_sqlalchemy import SQLAlchemy
 from config import POSTGRES_DB, POSTGRES_PW, POSTGRES_URL, POSTGRES_USER
 
 
