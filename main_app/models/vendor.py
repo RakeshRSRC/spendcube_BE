@@ -1,5 +1,8 @@
+from main_app import db
+
 
 class Vendor(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    spotify_id = db.Column(db.String(200), unique=False, nullable=True)
-    spotify_token = db.Column(db.String(200), unique=False, nullable=True)
+    vendor_id = db.Column(db.Integer, primary_key=True)
+    vendor_name = db.Column(db.String(200), unique=False, nullable=False)
+    vendor_username = db.Column(db.String(200), unique=False, nullable=False)
+    vendor_password = db.Column(db.String(200), unique=False, nullable=False)
