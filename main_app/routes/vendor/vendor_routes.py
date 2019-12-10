@@ -3,6 +3,7 @@ from flask import Blueprint
 vendor_mod = Blueprint('vendor', __name__)
 
 
-@vendor_mod.route('/')
+@vendor_mod.route('/', methods=['GET'])
 def vendor():
-    return "<h1>Inside Vendor</h1>"
+    print("YASSS")
+    return "HELLO VENDOR"
